@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jare's Inventory Quest</title>
+    <title>Idle Icon</title>
     <style>
         html, body { width: 100%; height: 100%; overflow: hidden; margin: 0; padding: 0; }
         #playarea { width: 96%; height: auto; margin: 1em 2%; position: relative; }
@@ -13,6 +13,7 @@
         .invitem { padding: 2; border: black solid 1px; box-sizing: border-box; }
         #score { font-family: Arial, Helvetica, sans-serif; font-size: 3vw; color: yellow; position:absolute; top: 1vw; left: 3vw; text-shadow: 0.1vw 0.1vw 0.4vw #000000; }
         #enemyweak { position: absolute; top: 6vw; left: 35%; width: 4vw; height: auto; }
+        #prose { margin: 1em; }
     </style>
 </head>
 <body>
@@ -22,10 +23,14 @@
         <img id="enemyweak" class="invitem" style="display:none">
         <div id="inventory"></div>
     </div>
-    <p>A Ludum Dare 40 entry by Javier Arevalo.</p>
-    <p>The theme is "the more you have, the worse it is". I only had a couple hours to do something, so I decided
-        to go for a 10000000-inspired idle runner game, where the enemy shows a weakness icon and you can use the equivalent item from your inventory to hit harder. Eventually you will have too many items and it will be pretty hard to figure out what to click. There is no death.
-    </p>
+    <div id="prose">
+        <h2>Idle Icon</h2>
+        <p>A Ludum Dare 40 entry by Javier Arevalo.</p>
+        <p>The theme is "the more you have, the worse it is". I only had a couple hours to do something, so I decided
+            to go for a 10000000-inspired idle runner game, where the enemy shows a weakness icon and you can click on the equivalent item from your inventory to hit harder. Eventually you will have too many items and it will be pretty hard to figure out what to click. There is no death.
+        </p>
+        <p>You can find the project in its <a href="https://github.com/TheJare/ld40">Github repo</a>.</p>
+    </div>
 
     <script>
         const canvas = document.getElementById("canvas");
